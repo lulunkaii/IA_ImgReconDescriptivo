@@ -1,0 +1,487 @@
+Modelo creado y movido a: cuda
+Número de parámetros: 2,692,426
+Batch 0/391, Loss: 3.1991, Acc: 5.47%
+Batch 100/391, Loss: 2.0778, Acc: 15.16%
+Batch 200/391, Loss: 2.0244, Acc: 19.27%
+Batch 300/391, Loss: 1.9142, Acc: 22.13%
+Epoch 1/50:
+  Train Loss: 2.0748, Train Acc: 24.31%
+  Val Loss: 1.6051, Val Acc: 40.54%
+  Time: 59.68s, LR: 0.000999
+  ✓ Nuevo mejor modelo guardado! Val Acc: 40.54%
+--------------------------------------------------
+Batch 0/391, Loss: 1.9210, Acc: 32.03%
+Batch 100/391, Loss: 1.6849, Acc: 32.72%
+Batch 200/391, Loss: 1.7962, Acc: 33.48%
+Batch 300/391, Loss: 1.8135, Acc: 34.13%
+Epoch 2/50:
+  Train Loss: 1.7887, Train Acc: 34.81%
+  Val Loss: 1.5092, Val Acc: 46.56%
+  Time: 58.80s, LR: 0.000996
+  ✓ Nuevo mejor modelo guardado! Val Acc: 46.56%
+--------------------------------------------------
+Batch 0/391, Loss: 1.5108, Acc: 46.09%
+Batch 100/391, Loss: 1.7046, Acc: 37.50%
+Batch 200/391, Loss: 1.6087, Acc: 38.08%
+Batch 300/391, Loss: 1.6442, Acc: 38.74%
+Epoch 3/50:
+  Train Loss: 1.6804, Train Acc: 39.06%
+  Val Loss: 1.3638, Val Acc: 50.64%
+  Time: 61.36s, LR: 0.000991
+  ✓ Nuevo mejor modelo guardado! Val Acc: 50.64%
+--------------------------------------------------
+Batch 0/391, Loss: 1.6822, Acc: 37.50%
+Batch 100/391, Loss: 1.6025, Acc: 41.24%
+Batch 200/391, Loss: 1.7342, Acc: 41.35%
+Batch 300/391, Loss: 1.7000, Acc: 41.47%
+Epoch 4/50:
+  Train Loss: 1.6090, Train Acc: 41.72%
+  Val Loss: 1.2892, Val Acc: 54.10%
+  Time: 58.73s, LR: 0.000984
+  ✓ Nuevo mejor modelo guardado! Val Acc: 54.10%
+--------------------------------------------------
+Batch 0/391, Loss: 1.5947, Acc: 40.62%
+Batch 100/391, Loss: 1.6637, Acc: 43.08%
+Batch 200/391, Loss: 1.7113, Acc: 43.30%
+Batch 300/391, Loss: 1.4811, Acc: 43.43%
+Epoch 5/50:
+  Train Loss: 1.5576, Train Acc: 43.71%
+  Val Loss: 1.2660, Val Acc: 54.31%
+  Time: 58.76s, LR: 0.000976
+  ✓ Nuevo mejor modelo guardado! Val Acc: 54.31%
+--------------------------------------------------
+Batch 0/391, Loss: 1.5383, Acc: 42.97%
+Batch 100/391, Loss: 1.6793, Acc: 45.72%
+Batch 200/391, Loss: 1.4453, Acc: 45.81%
+Batch 300/391, Loss: 1.4703, Acc: 45.69%
+Epoch 6/50:
+  Train Loss: 1.5098, Train Acc: 45.52%
+  Val Loss: 1.2085, Val Acc: 55.99%
+  Time: 58.75s, LR: 0.000965
+  ✓ Nuevo mejor modelo guardado! Val Acc: 55.99%
+--------------------------------------------------
+Batch 0/391, Loss: 1.4582, Acc: 46.09%
+Batch 100/391, Loss: 1.5610, Acc: 47.01%
+Batch 200/391, Loss: 1.4711, Acc: 46.75%
+Batch 300/391, Loss: 1.4098, Acc: 46.58%
+Epoch 7/50:
+  Train Loss: 1.4753, Train Acc: 46.70%
+  Val Loss: 1.1743, Val Acc: 58.03%
+  Time: 58.77s, LR: 0.000952
+  ✓ Nuevo mejor modelo guardado! Val Acc: 58.03%
+--------------------------------------------------
+Batch 0/391, Loss: 1.4158, Acc: 50.78%
+Batch 100/391, Loss: 1.5397, Acc: 48.62%
+Batch 200/391, Loss: 1.5201, Acc: 48.28%
+Batch 300/391, Loss: 1.4067, Acc: 48.49%
+Epoch 8/50:
+  Train Loss: 1.4303, Train Acc: 48.47%
+  Val Loss: 1.1741, Val Acc: 57.92%
+  Time: 59.15s, LR: 0.000938
+--------------------------------------------------
+Batch 0/391, Loss: 1.4420, Acc: 46.88%
+Batch 100/391, Loss: 1.5201, Acc: 48.96%
+Batch 200/391, Loss: 1.4986, Acc: 49.13%
+Batch 300/391, Loss: 1.3349, Acc: 49.70%
+Epoch 9/50:
+  Train Loss: 1.3938, Train Acc: 49.62%
+  Val Loss: 1.1332, Val Acc: 59.69%
+  Time: 58.99s, LR: 0.000922
+  ✓ Nuevo mejor modelo guardado! Val Acc: 59.69%
+--------------------------------------------------
+Batch 0/391, Loss: 1.1483, Acc: 59.38%
+Batch 100/391, Loss: 1.4146, Acc: 51.31%
+Batch 200/391, Loss: 1.3977, Acc: 51.22%
+Batch 300/391, Loss: 1.2494, Acc: 51.22%
+Epoch 10/50:
+  Train Loss: 1.3564, Train Acc: 51.41%
+  Val Loss: 1.1046, Val Acc: 60.68%
+  Time: 58.96s, LR: 0.000905
+  ✓ Nuevo mejor modelo guardado! Val Acc: 60.68%
+--------------------------------------------------
+Batch 0/391, Loss: 1.2466, Acc: 57.03%
+Batch 100/391, Loss: 1.4851, Acc: 52.73%
+Batch 200/391, Loss: 1.2740, Acc: 52.59%
+Batch 300/391, Loss: 1.3132, Acc: 52.71%
+Epoch 11/50:
+  Train Loss: 1.3256, Train Acc: 52.60%
+  Val Loss: 1.0661, Val Acc: 61.84%
+  Time: 58.91s, LR: 0.000885
+  ✓ Nuevo mejor modelo guardado! Val Acc: 61.84%
+--------------------------------------------------
+Batch 0/391, Loss: 1.1600, Acc: 60.94%
+Batch 100/391, Loss: 1.1739, Acc: 54.39%
+Batch 200/391, Loss: 1.2225, Acc: 54.07%
+Batch 300/391, Loss: 1.1331, Acc: 53.91%
+Epoch 12/50:
+  Train Loss: 1.2885, Train Acc: 54.05%
+  Val Loss: 1.0314, Val Acc: 63.59%
+  Time: 59.22s, LR: 0.000864
+  ✓ Nuevo mejor modelo guardado! Val Acc: 63.59%
+--------------------------------------------------
+Batch 0/391, Loss: 1.2812, Acc: 55.47%
+Batch 100/391, Loss: 1.2979, Acc: 54.94%
+Batch 200/391, Loss: 1.1780, Acc: 54.93%
+Batch 300/391, Loss: 1.3274, Acc: 55.02%
+Epoch 13/50:
+  Train Loss: 1.2563, Train Acc: 55.23%
+  Val Loss: 1.0078, Val Acc: 64.14%
+  Time: 58.94s, LR: 0.000842
+  ✓ Nuevo mejor modelo guardado! Val Acc: 64.14%
+--------------------------------------------------
+Batch 0/391, Loss: 1.2204, Acc: 54.69%
+Batch 100/391, Loss: 1.1300, Acc: 56.69%
+Batch 200/391, Loss: 1.1958, Acc: 56.27%
+Batch 300/391, Loss: 1.2357, Acc: 56.31%
+Epoch 14/50:
+  Train Loss: 1.2199, Train Acc: 56.48%
+  Val Loss: 0.9772, Val Acc: 65.09%
+  Time: 59.52s, LR: 0.000819
+  ✓ Nuevo mejor modelo guardado! Val Acc: 65.09%
+--------------------------------------------------
+Batch 0/391, Loss: 1.2906, Acc: 56.25%
+Batch 100/391, Loss: 1.2928, Acc: 57.69%
+Batch 200/391, Loss: 1.0774, Acc: 57.95%
+Batch 300/391, Loss: 1.3593, Acc: 57.94%
+Epoch 15/50:
+  Train Loss: 1.1837, Train Acc: 57.92%
+  Val Loss: 0.9508, Val Acc: 65.98%
+  Time: 59.01s, LR: 0.000794
+  ✓ Nuevo mejor modelo guardado! Val Acc: 65.98%
+--------------------------------------------------
+Batch 0/391, Loss: 1.1360, Acc: 59.38%
+Batch 100/391, Loss: 1.2189, Acc: 58.32%
+Batch 200/391, Loss: 1.0638, Acc: 58.31%
+Batch 300/391, Loss: 1.0996, Acc: 58.55%
+Epoch 16/50:
+  Train Loss: 1.1619, Train Acc: 58.69%
+  Val Loss: 0.8965, Val Acc: 68.06%
+  Time: 59.12s, LR: 0.000768
+  ✓ Nuevo mejor modelo guardado! Val Acc: 68.06%
+--------------------------------------------------
+Batch 0/391, Loss: 1.1892, Acc: 55.47%
+Batch 100/391, Loss: 1.2406, Acc: 60.11%
+Batch 200/391, Loss: 1.1778, Acc: 60.31%
+Batch 300/391, Loss: 0.8994, Acc: 60.19%
+Epoch 17/50:
+  Train Loss: 1.1264, Train Acc: 60.13%
+  Val Loss: 0.8882, Val Acc: 68.59%
+  Time: 59.16s, LR: 0.000741
+  ✓ Nuevo mejor modelo guardado! Val Acc: 68.59%
+--------------------------------------------------
+Batch 0/391, Loss: 0.9253, Acc: 67.97%
+Batch 100/391, Loss: 1.1089, Acc: 61.97%
+Batch 200/391, Loss: 1.0323, Acc: 61.44%
+Batch 300/391, Loss: 1.3282, Acc: 61.18%
+Epoch 18/50:
+  Train Loss: 1.0987, Train Acc: 61.01%
+  Val Loss: 0.8598, Val Acc: 68.87%
+  Time: 59.05s, LR: 0.000713
+  ✓ Nuevo mejor modelo guardado! Val Acc: 68.87%
+--------------------------------------------------
+Batch 0/391, Loss: 1.1487, Acc: 60.94%
+Batch 100/391, Loss: 1.1501, Acc: 61.70%
+Batch 200/391, Loss: 1.0998, Acc: 61.93%
+Batch 300/391, Loss: 1.1008, Acc: 62.06%
+Epoch 19/50:
+  Train Loss: 1.0733, Train Acc: 62.02%
+  Val Loss: 0.8626, Val Acc: 69.51%
+  Time: 59.30s, LR: 0.000684
+  ✓ Nuevo mejor modelo guardado! Val Acc: 69.51%
+--------------------------------------------------
+Batch 0/391, Loss: 1.1757, Acc: 58.59%
+Batch 100/391, Loss: 1.0724, Acc: 62.68%
+Batch 200/391, Loss: 1.1434, Acc: 63.01%
+Batch 300/391, Loss: 1.2267, Acc: 62.80%
+Epoch 20/50:
+  Train Loss: 1.0509, Train Acc: 62.81%
+  Val Loss: 0.8246, Val Acc: 70.45%
+  Time: 59.20s, LR: 0.000655
+  ✓ Nuevo mejor modelo guardado! Val Acc: 70.45%
+--------------------------------------------------
+Batch 0/391, Loss: 1.0143, Acc: 65.62%
+Batch 100/391, Loss: 0.9255, Acc: 63.75%
+Batch 200/391, Loss: 1.1579, Acc: 63.78%
+Batch 300/391, Loss: 1.0993, Acc: 63.44%
+Epoch 21/50:
+  Train Loss: 1.0252, Train Acc: 63.54%
+  Val Loss: 0.8438, Val Acc: 70.13%
+  Time: 59.16s, LR: 0.000624
+--------------------------------------------------
+Batch 0/391, Loss: 0.8668, Acc: 65.62%
+Batch 100/391, Loss: 0.9713, Acc: 64.37%
+Batch 200/391, Loss: 1.0149, Acc: 64.17%
+Batch 300/391, Loss: 0.8529, Acc: 64.43%
+Epoch 22/50:
+  Train Loss: 0.9992, Train Acc: 64.36%
+  Val Loss: 0.8110, Val Acc: 71.52%
+  Time: 59.13s, LR: 0.000594
+  ✓ Nuevo mejor modelo guardado! Val Acc: 71.52%
+--------------------------------------------------
+Batch 0/391, Loss: 0.8999, Acc: 68.75%
+Batch 100/391, Loss: 0.9459, Acc: 65.90%
+Batch 200/391, Loss: 1.0056, Acc: 65.63%
+Batch 300/391, Loss: 0.9884, Acc: 65.53%
+Epoch 23/50:
+  Train Loss: 0.9807, Train Acc: 65.32%
+  Val Loss: 0.8109, Val Acc: 71.21%
+  Time: 59.06s, LR: 0.000563
+--------------------------------------------------
+Batch 0/391, Loss: 1.0444, Acc: 64.84%
+Batch 100/391, Loss: 0.7962, Acc: 66.90%
+Batch 200/391, Loss: 1.0193, Acc: 66.76%
+Batch 300/391, Loss: 0.9265, Acc: 66.67%
+Epoch 24/50:
+  Train Loss: 0.9476, Train Acc: 66.55%
+  Val Loss: 0.8203, Val Acc: 71.95%
+  Time: 59.34s, LR: 0.000531
+  ✓ Nuevo mejor modelo guardado! Val Acc: 71.95%
+--------------------------------------------------
+Batch 0/391, Loss: 1.0222, Acc: 59.38%
+Batch 100/391, Loss: 0.9775, Acc: 67.62%
+Batch 200/391, Loss: 0.9168, Acc: 67.27%
+Batch 300/391, Loss: 0.8652, Acc: 66.86%
+Epoch 25/50:
+  Train Loss: 0.9331, Train Acc: 66.89%
+  Val Loss: 0.7859, Val Acc: 72.82%
+  Time: 59.98s, LR: 0.000500
+  ✓ Nuevo mejor modelo guardado! Val Acc: 72.82%
+--------------------------------------------------
+Batch 0/391, Loss: 0.8825, Acc: 71.09%
+Batch 100/391, Loss: 1.0143, Acc: 68.02%
+Batch 200/391, Loss: 0.8247, Acc: 67.88%
+Batch 300/391, Loss: 1.0443, Acc: 67.86%
+Epoch 26/50:
+  Train Loss: 0.9078, Train Acc: 67.94%
+  Val Loss: 0.7966, Val Acc: 72.84%
+  Time: 58.95s, LR: 0.000469
+  ✓ Nuevo mejor modelo guardado! Val Acc: 72.84%
+--------------------------------------------------
+Batch 0/391, Loss: 0.9789, Acc: 67.97%
+Batch 100/391, Loss: 0.8748, Acc: 68.92%
+Batch 200/391, Loss: 1.0535, Acc: 68.75%
+Batch 300/391, Loss: 0.8856, Acc: 68.72%
+Epoch 27/50:
+  Train Loss: 0.8854, Train Acc: 68.76%
+  Val Loss: 0.8016, Val Acc: 72.95%
+  Time: 58.97s, LR: 0.000437
+  ✓ Nuevo mejor modelo guardado! Val Acc: 72.95%
+--------------------------------------------------
+Batch 0/391, Loss: 0.8143, Acc: 67.19%
+Batch 100/391, Loss: 0.6693, Acc: 69.68%
+Batch 200/391, Loss: 1.0773, Acc: 69.54%
+Batch 300/391, Loss: 0.9064, Acc: 69.43%
+Epoch 28/50:
+  Train Loss: 0.8671, Train Acc: 69.24%
+  Val Loss: 0.7534, Val Acc: 74.08%
+  Time: 59.24s, LR: 0.000406
+  ✓ Nuevo mejor modelo guardado! Val Acc: 74.08%
+--------------------------------------------------
+Batch 0/391, Loss: 0.8270, Acc: 68.75%
+Batch 100/391, Loss: 0.7869, Acc: 70.96%
+Batch 200/391, Loss: 0.7475, Acc: 70.81%
+Batch 300/391, Loss: 0.8344, Acc: 70.67%
+Epoch 29/50:
+  Train Loss: 0.8400, Train Acc: 70.51%
+  Val Loss: 0.7429, Val Acc: 74.54%
+  Time: 59.27s, LR: 0.000376
+  ✓ Nuevo mejor modelo guardado! Val Acc: 74.54%
+--------------------------------------------------
+Batch 0/391, Loss: 0.8543, Acc: 66.41%
+Batch 100/391, Loss: 0.7235, Acc: 71.25%
+Batch 200/391, Loss: 0.7955, Acc: 71.17%
+Batch 300/391, Loss: 0.6913, Acc: 71.03%
+Epoch 30/50:
+  Train Loss: 0.8197, Train Acc: 70.96%
+  Val Loss: 0.7380, Val Acc: 74.66%
+  Time: 58.99s, LR: 0.000345
+  ✓ Nuevo mejor modelo guardado! Val Acc: 74.66%
+--------------------------------------------------
+Batch 0/391, Loss: 0.8513, Acc: 69.53%
+Batch 100/391, Loss: 0.7571, Acc: 71.62%
+Batch 200/391, Loss: 0.7926, Acc: 71.57%
+Batch 300/391, Loss: 0.9703, Acc: 71.76%
+Epoch 31/50:
+  Train Loss: 0.8045, Train Acc: 71.64%
+  Val Loss: 0.7317, Val Acc: 75.31%
+  Time: 58.95s, LR: 0.000316
+  ✓ Nuevo mejor modelo guardado! Val Acc: 75.31%
+--------------------------------------------------
+Batch 0/391, Loss: 0.8455, Acc: 69.53%
+Batch 100/391, Loss: 0.7307, Acc: 72.18%
+Batch 200/391, Loss: 0.6949, Acc: 72.51%
+Batch 300/391, Loss: 0.9549, Acc: 72.76%
+Epoch 32/50:
+  Train Loss: 0.7810, Train Acc: 72.52%
+  Val Loss: 0.7651, Val Acc: 75.09%
+  Time: 58.96s, LR: 0.000287
+--------------------------------------------------
+Batch 0/391, Loss: 0.9055, Acc: 67.19%
+Batch 100/391, Loss: 0.7286, Acc: 73.00%
+Batch 200/391, Loss: 0.8540, Acc: 72.80%
+Batch 300/391, Loss: 0.8740, Acc: 72.67%
+Epoch 33/50:
+  Train Loss: 0.7702, Train Acc: 72.69%
+  Val Loss: 0.7431, Val Acc: 75.47%
+  Time: 58.97s, LR: 0.000259
+  ✓ Nuevo mejor modelo guardado! Val Acc: 75.47%
+--------------------------------------------------
+Batch 0/391, Loss: 0.7448, Acc: 74.22%
+Batch 100/391, Loss: 0.7058, Acc: 73.62%
+Batch 200/391, Loss: 0.7189, Acc: 73.27%
+Batch 300/391, Loss: 0.8851, Acc: 73.43%
+Epoch 34/50:
+  Train Loss: 0.7497, Train Acc: 73.50%
+  Val Loss: 0.7664, Val Acc: 75.19%
+  Time: 59.14s, LR: 0.000232
+--------------------------------------------------
+Batch 0/391, Loss: 0.7518, Acc: 74.22%
+Batch 100/391, Loss: 0.7414, Acc: 74.29%
+Batch 200/391, Loss: 0.6640, Acc: 74.57%
+Batch 300/391, Loss: 0.7507, Acc: 74.14%
+Epoch 35/50:
+  Train Loss: 0.7318, Train Acc: 74.20%
+  Val Loss: 0.7413, Val Acc: 76.01%
+  Time: 59.00s, LR: 0.000206
+  ✓ Nuevo mejor modelo guardado! Val Acc: 76.01%
+--------------------------------------------------
+Batch 0/391, Loss: 0.7065, Acc: 70.31%
+Batch 100/391, Loss: 0.6542, Acc: 75.16%
+Batch 200/391, Loss: 0.6523, Acc: 74.88%
+Batch 300/391, Loss: 0.6650, Acc: 74.66%
+Epoch 36/50:
+  Train Loss: 0.7165, Train Acc: 74.64%
+  Val Loss: 0.7337, Val Acc: 76.55%
+  Time: 59.15s, LR: 0.000181
+  ✓ Nuevo mejor modelo guardado! Val Acc: 76.55%
+--------------------------------------------------
+Batch 0/391, Loss: 0.6189, Acc: 78.91%
+Batch 100/391, Loss: 0.6762, Acc: 75.47%
+Batch 200/391, Loss: 0.8097, Acc: 75.14%
+Batch 300/391, Loss: 0.6522, Acc: 75.03%
+Epoch 37/50:
+  Train Loss: 0.7043, Train Acc: 75.28%
+  Val Loss: 0.7372, Val Acc: 76.47%
+  Time: 58.98s, LR: 0.000158
+--------------------------------------------------
+Batch 0/391, Loss: 0.6553, Acc: 82.03%
+Batch 100/391, Loss: 0.7943, Acc: 75.67%
+Batch 200/391, Loss: 0.6917, Acc: 75.59%
+Batch 300/391, Loss: 0.6606, Acc: 75.56%
+Epoch 38/50:
+  Train Loss: 0.6901, Train Acc: 75.82%
+  Val Loss: 0.7175, Val Acc: 76.94%
+  Time: 58.96s, LR: 0.000136
+  ✓ Nuevo mejor modelo guardado! Val Acc: 76.94%
+--------------------------------------------------
+Batch 0/391, Loss: 0.6423, Acc: 78.91%
+Batch 100/391, Loss: 0.7484, Acc: 75.63%
+Batch 200/391, Loss: 0.6282, Acc: 76.07%
+Batch 300/391, Loss: 0.6767, Acc: 76.10%
+Epoch 39/50:
+  Train Loss: 0.6824, Train Acc: 75.97%
+  Val Loss: 0.7265, Val Acc: 76.90%
+  Time: 59.15s, LR: 0.000115
+--------------------------------------------------
+Batch 0/391, Loss: 0.6697, Acc: 77.34%
+Batch 100/391, Loss: 0.6835, Acc: 76.21%
+Batch 200/391, Loss: 0.4674, Acc: 76.57%
+Batch 300/391, Loss: 0.5040, Acc: 76.54%
+Epoch 40/50:
+  Train Loss: 0.6689, Train Acc: 76.42%
+  Val Loss: 0.7167, Val Acc: 77.60%
+  Time: 58.97s, LR: 0.000095
+  ✓ Nuevo mejor modelo guardado! Val Acc: 77.60%
+--------------------------------------------------
+Batch 0/391, Loss: 0.7076, Acc: 76.56%
+Batch 100/391, Loss: 0.6296, Acc: 77.04%
+Batch 200/391, Loss: 0.6817, Acc: 76.79%
+Batch 300/391, Loss: 0.4745, Acc: 76.83%
+Epoch 41/50:
+  Train Loss: 0.6590, Train Acc: 76.76%
+  Val Loss: 0.7277, Val Acc: 77.64%
+  Time: 59.17s, LR: 0.000078
+  ✓ Nuevo mejor modelo guardado! Val Acc: 77.64%
+--------------------------------------------------
+Batch 0/391, Loss: 0.7047, Acc: 75.78%
+Batch 100/391, Loss: 0.6822, Acc: 77.62%
+Batch 200/391, Loss: 0.8721, Acc: 77.12%
+Batch 300/391, Loss: 0.5653, Acc: 77.40%
+Epoch 42/50:
+  Train Loss: 0.6464, Train Acc: 77.44%
+  Val Loss: 0.7324, Val Acc: 77.51%
+  Time: 58.98s, LR: 0.000062
+--------------------------------------------------
+Batch 0/391, Loss: 0.5330, Acc: 80.47%
+Batch 100/391, Loss: 0.6020, Acc: 77.88%
+Batch 200/391, Loss: 0.5698, Acc: 77.96%
+Batch 300/391, Loss: 0.6360, Acc: 77.81%
+Epoch 43/50:
+  Train Loss: 0.6416, Train Acc: 77.66%
+  Val Loss: 0.7343, Val Acc: 77.35%
+  Time: 59.15s, LR: 0.000048
+--------------------------------------------------
+Batch 0/391, Loss: 0.6038, Acc: 78.91%
+Batch 100/391, Loss: 0.6838, Acc: 77.54%
+Batch 200/391, Loss: 0.7571, Acc: 77.55%
+Batch 300/391, Loss: 0.7072, Acc: 77.37%
+Epoch 44/50:
+  Train Loss: 0.6361, Train Acc: 77.52%
+  Val Loss: 0.7393, Val Acc: 77.32%
+  Time: 58.99s, LR: 0.000035
+--------------------------------------------------
+Batch 0/391, Loss: 0.6995, Acc: 75.00%
+Batch 100/391, Loss: 0.5494, Acc: 77.70%
+Batch 200/391, Loss: 0.6663, Acc: 78.08%
+Batch 300/391, Loss: 0.8276, Acc: 78.00%
+Epoch 45/50:
+  Train Loss: 0.6339, Train Acc: 77.91%
+  Val Loss: 0.7358, Val Acc: 77.53%
+  Time: 58.94s, LR: 0.000024
+--------------------------------------------------
+Batch 0/391, Loss: 0.5911, Acc: 76.56%
+Batch 100/391, Loss: 0.5735, Acc: 77.77%
+Batch 200/391, Loss: 0.6806, Acc: 77.63%
+Batch 300/391, Loss: 0.4465, Acc: 77.89%
+Epoch 46/50:
+  Train Loss: 0.6284, Train Acc: 77.93%
+  Val Loss: 0.7265, Val Acc: 77.81%
+  Time: 59.09s, LR: 0.000016
+  ✓ Nuevo mejor modelo guardado! Val Acc: 77.81%
+--------------------------------------------------
+Batch 0/391, Loss: 0.6603, Acc: 75.78%
+Batch 100/391, Loss: 0.6274, Acc: 79.27%
+Batch 200/391, Loss: 0.6148, Acc: 78.66%
+Batch 300/391, Loss: 0.7901, Acc: 78.61%
+Epoch 47/50:
+  Train Loss: 0.6167, Train Acc: 78.54%
+  Val Loss: 0.7370, Val Acc: 77.73%
+  Time: 58.87s, LR: 0.000009
+--------------------------------------------------
+Batch 0/391, Loss: 0.5943, Acc: 79.69%
+Batch 100/391, Loss: 0.6239, Acc: 78.45%
+Batch 200/391, Loss: 0.5090, Acc: 78.40%
+Batch 300/391, Loss: 0.7499, Acc: 78.21%
+Epoch 48/50:
+  Train Loss: 0.6187, Train Acc: 78.16%
+  Val Loss: 0.7349, Val Acc: 77.71%
+  Time: 59.17s, LR: 0.000004
+--------------------------------------------------
+Batch 0/391, Loss: 0.6903, Acc: 74.22%
+Batch 100/391, Loss: 0.6551, Acc: 77.78%
+Batch 200/391, Loss: 0.6586, Acc: 78.16%
+Batch 300/391, Loss: 0.7469, Acc: 78.25%
+Epoch 49/50:
+  Train Loss: 0.6211, Train Acc: 78.23%
+  Val Loss: 0.7356, Val Acc: 77.67%
+  Time: 59.01s, LR: 0.000001
+--------------------------------------------------
+Batch 0/391, Loss: 0.6651, Acc: 74.22%
+Batch 100/391, Loss: 0.5770, Acc: 78.36%
+Batch 200/391, Loss: 0.6925, Acc: 78.28%
+Batch 300/391, Loss: 0.6241, Acc: 78.46%
+Epoch 50/50:
+  Train Loss: 0.6179, Train Acc: 78.26%
+  Val Loss: 0.7347, Val Acc: 77.74%
+  Time: 59.19s, LR: 0.000000
+--------------------------------------------------
