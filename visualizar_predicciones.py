@@ -3,8 +3,10 @@ import torch
 import numpy as np
 from PIL import Image
 import random
+from torchvision import transforms, datasets
 import torch.nn.functional as F
 import time
+import threading
 import math
 
 def slideshow_with_stats(model, dataset, device, num_samples=100, display_time=2):
@@ -13,18 +15,7 @@ def slideshow_with_stats(model, dataset, device, num_samples=100, display_time=2
     """
     model.eval()
     
-    # Detectar si es un dataset o una lista
-    if isinstance(dataset, list):
-        # Es una lista de tuplas (imagen, etiqueta)
-        dataset_list = dataset
-        # Obtener clases desde el dataset original de CIFAR-10
-        classes = ('plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
-    else:
-        # Es un dataset con atributo classes
-        dataset_list = [(dataset[i][0], dataset[i][1]) for i in range(len(dataset))]
-        classes = dataset.classes
-    
-    indices = random.sample(range(len(dataset_list)), min(num_samples, len(dataset_list)))
+    indices = random.sample(range(len(dataset)), min(num_samples, len(dataset)))
     
     # Estadísticas
     stats = {
@@ -36,38 +27,30 @@ def slideshow_with_stats(model, dataset, device, num_samples=100, display_time=2
     }
     
     # Inicializar contadores por clase
-    for class_name in classes:
+    for class_name in dataset.classes:
         stats['class_correct'][class_name] = 0
         stats['class_total'][class_name] = 0
     
-    print(f"Iniciando slideshow con estadísticas y mapas de atencion...")
-    print(f"Controles: 'q' = salir, 'p' = pausar, 'f' = mas rapido, 's' = mas lento")
-    print(f"Secuencia: Imagen original ({display_time}s) -> Mapa de atencion ({display_time}s) -> Siguiente imagen")
+    print(f"Iniciando slideshow con estadísticas y mapas de atención...")
+    print(f"Controles: 'q' = salir, 'p' = pausar, 'f' = más rápido, 's' = más lento")
+    print(f"Secuencia: Imagen original ({display_time}s) -> Mapa de atención ({display_time}s) -> Siguiente imagen")
     
     paused = False
     current_time = display_time
-    window_name = "ViT Slideshow con Atencion"
     
     with torch.no_grad():
         for i, idx in enumerate(indices):
             # Obtener imagen y predicción
-            image, true_label = dataset_list[idx]
-            true_class = classes[true_label]
+            image, true_label = dataset[idx]
+            true_class = dataset.classes[true_label]
             
-            # Asegurar que la imagen esté en el device correcto
-            if isinstance(image, torch.Tensor):
-                image_tensor = image.unsqueeze(0) if image.dim() == 3 else image
-            else:
-                image_tensor = image.unsqueeze(0)
-            
-            if image_tensor.device != device:
-                image_tensor = image_tensor.to(device)
+            image_tensor = image.unsqueeze(0).to(device)
             
             # Hacer predicción CON mapas de atención
             output, attn_maps = model(image_tensor, return_attn=True)
             probabilities = F.softmax(output, dim=1)
             confidence, predicted_label = torch.max(probabilities, 1)
-            predicted_class = classes[predicted_label.item()]
+            predicted_class = dataset.classes[predicted_label.item()]
             
             # Actualizar estadísticas
             stats['total'] += 1
@@ -80,17 +63,10 @@ def slideshow_with_stats(model, dataset, device, num_samples=100, display_time=2
             else:
                 stats['incorrect'] += 1
             
-            # Preparar imagen base - asegurar que esté en CPU
-            if isinstance(image, torch.Tensor):
-                if image.device != torch.device('cpu'):
-                    image = image.cpu()
-                img_np = image.permute(1, 2, 0).numpy()
-            else:
-                img_np = image.permute(1, 2, 0).numpy()
+            # Preparar imagen base
+            img_np = image.permute(1, 2, 0).numpy()
             
-            # Desnormalizar si es necesario (para CIFAR-10)
-            if img_np.max() <= 1.0 and img_np.min() >= -1.0:
-                # Parece estar normalizado
+            if hasattr(dataset, 'transform') and any('Normalize' in str(t) for t in dataset.transform.transforms):
                 mean = np.array([0.4914, 0.4822, 0.4465])
                 std = np.array([0.2023, 0.1994, 0.2010])
                 img_np = img_np * std + mean
@@ -224,18 +200,12 @@ def slideshow_with_stats(model, dataset, device, num_samples=100, display_time=2
             print(f"Confianza: {confidence.item():.3f}")
             print("Fase 1: Mostrando imagen original...")
             
-            cv2.imshow(window_name, display_img_original)
+            cv2.imshow("ViT Slideshow con Atención", display_img_original)
             
             # Esperar con controles - Fase 1
             start_time = time.time()
             phase1_interrupted = False
             while time.time() - start_time < current_time:
-                # Verificar si la ventana sigue abierta
-                if cv2.getWindowProperty(window_name, cv2.WND_PROP_VISIBLE) < 1:
-                    print("Ventana cerrada por el usuario")
-                    cv2.destroyAllWindows()
-                    return stats
-                
                 if paused:
                     key = cv2.waitKey(100) & 0xFF
                 else:
@@ -259,12 +229,6 @@ def slideshow_with_stats(model, dataset, device, num_samples=100, display_time=2
                 
                 if paused:
                     continue
-            
-            # Verificar si la ventana sigue abierta antes de la fase 2
-            if cv2.getWindowProperty(window_name, cv2.WND_PROP_VISIBLE) < 1:
-                print("Ventana cerrada por el usuario")
-                cv2.destroyAllWindows()
-                return stats
             
             # Fase 2: Mostrar mapa de atención (solo si no fue interrumpido)
             if not phase1_interrupted:
@@ -346,17 +310,11 @@ def slideshow_with_stats(model, dataset, device, num_samples=100, display_time=2
                 cv2.putText(display_img_attention, f"Velocidad: {current_time:.1f}s", (420, y_pos), 
                            font, font_scale, (0, 0, 0), thickness)
                 
-                cv2.imshow(window_name, display_img_attention)
+                cv2.imshow("ViT Slideshow con Atención", display_img_attention)
                 
                 # Esperar con controles - Fase 2
                 start_time = time.time()
                 while time.time() - start_time < current_time:
-                    # Verificar si la ventana sigue abierta
-                    if cv2.getWindowProperty(window_name, cv2.WND_PROP_VISIBLE) < 1:
-                        print("Ventana cerrada por el usuario")
-                        cv2.destroyAllWindows()
-                        return stats
-                    
                     if paused:
                         key = cv2.waitKey(100) & 0xFF
                     else:
